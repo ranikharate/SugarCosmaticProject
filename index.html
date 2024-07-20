@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pink_offer">SHOP FOR <span style="color: black;">RS 4999/-</span> AND GET A METTLE LIPSTICK OR BRONZE POUCH + MIRROR WORTH UP TO RS 1198/-</div>
+        <div class="title">
+            <div class="home">
+                <img src="images/Home_breadcrumb.png" alt="a">
+                <a href="index.html"><p id="makeup">&nbsp;&nbsp;/&nbsp;&nbsp; Cart</p></a>
+            </div>
+        </div>
+        <div class="displayData">
+            <div class="added_items">show added products</div>
+            <div class="empty-cart">
+                <img class="bag" src="images/emptycart.png" alt="empty cart">
+                <h6 class="baginfo">Hey! It's lonely here.<br>Your bag seems to have no company.<br>Why not add some products?</h6>
+                <button class="shop"><h3>SHOP NOW</h3><a href="index.html"></a></button>
+            </div>
+        </div>
+        <div class="total_box">
+            <h2>CART TOTAL</h2>
+            <div class="total_amt_box">
+                <div class="sub_total"><h4>Subtotal:</h4><div class="sub"><h4 style="font-weight: bold;">&#8377</h4><h4 id="bill_amt">0.00</h4></div></div>
+                <div class="sub_total"><h4>Tax(GST):</h4><h4>18%</h4></div>
+                <div class="line"></div>
+                <div class="sub_total"><h2>TOTAL</h2><div class="sub"><h2 style="font-weight: bold;">&#8377</h2><h2 id="total_amt">0.00</h2></div></div>
+            </div>
+            <div class="free_ship" id="freeShip">CONGRATULATIONS! YOU'VE GOT FREE SHIPPING</div>
+            <div class="offer" id="offer">SHOP ABOVE RS 1999 AND GET FREE SHIPPING</div>
+            <div class="checkout" id="checkout">CHECKOUT</div>
+        </div>
+        <div class="modal-bg">
+            <div class="modal">
+                <div class="deliAddress">
+                    <div><h5 style="color: grey;">Deliver to</h5><h5 id="address"></h5></div>
+                    <div><h5 style="color: grey;">Phone:</h5><h5 id="phone"></h5></div>
+                    <div><h5 style="color: grey">Delivery expected</h5><h5 id="deliveryDate">Monday</h5></div>
+                </div>
+                <div class="modal_text">
+                    <select id="cust" onchange="SetSelectedValue()"><option value="1">Select Payment Mode</option><option value="DEBIT CARD">Debit Card</option><option value="CREDIT CARD">Credit Card</option><option value="NET BANKING">Net Banking</option><option value="CASH ON DELIVERY">Cash On Delivery</option></select>
+                    <button id="modal-btn">PAY NOW</button>
+                </div>
+                <a href="" style="font-size: 14px;">Click here for new registration</a>
+                <span class="modal-close">X</span>
+            </div>
+        </div>
+        <div class="modal-bg2">
+            <div class="modal">
+                <div id="loader"><h4 style="margin: 20px;">Please wait...</h4><div class="loader"></div></div>
+                <div id="thank" class="thank">
+                    <h1 style="color: green;">Thank you for shopping with us! <img src="https://emoji.slack-edge.com/T01CBR70TN2/blob_excited/5d5d483e6784ad8a.gif" alt=""></h1>
+                    <div class="modal-thank">
+                        <h3>Your order is placed successfully!</h3>
+                        <div class="order_no"><h5>ORDER NO: #2361499443</h5><h5 id="payment_mode_show"></h5></div>
+                    </div>
+                    <button id="close">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
